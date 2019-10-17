@@ -25,7 +25,7 @@ Quando("escolho o método de pagamento e finalizo a compra") do
   @flow_purchease.button_confirm
 end
 
-Então("devo ver o produto {string} no carrinho e devo prosseguir") do |product|
+Então("devo ver o produto {string} no carrinho e prosseguir") do |product|
   expect(@flow_purchease.summary).to eq(product)
   @helper.link_proceed_checkout
 end
